@@ -14,11 +14,6 @@ class ViewController: UIViewController {
 
     var leftDiceNumber = 1
     var rightDiceNumber = 1
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
     
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         //print("Button got tapped")
