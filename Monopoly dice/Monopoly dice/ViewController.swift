@@ -12,10 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var leftDiceImageView: UIImageView!
     @IBOutlet weak var rightDiceImageView: UIImageView!
     
+    let dicesArray = [#imageLiteral(resourceName: "dice-one"), #imageLiteral(resourceName: "dice-two"), #imageLiteral(resourceName: "dice-three"),#imageLiteral(resourceName: "dice-four"),#imageLiteral(resourceName: "dice-five"),#imageLiteral(resourceName: "dice-six")]
+    
     @IBAction func rollButtonPressed(_ sender: UIButton) {
         //print("Button got tapped")
-        leftDiceImageView.image = [#imageLiteral(resourceName: "dice-one"), #imageLiteral(resourceName: "dice-two"), #imageLiteral(resourceName: "dice-three"),#imageLiteral(resourceName: "dice-four"),#imageLiteral(resourceName: "dice-five"),#imageLiteral(resourceName: "dice-six")][Int.random(in: 1 ..< 6)]
-        rightDiceImageView.image = [#imageLiteral(resourceName: "dice-one"), #imageLiteral(resourceName: "dice-two"), #imageLiteral(resourceName: "dice-three"),#imageLiteral(resourceName: "dice-four"),#imageLiteral(resourceName: "dice-five"),#imageLiteral(resourceName: "dice-six")][Int.random(in: 1 ..< 6)]
+        leftDiceImageView.image = dicesArray[Int.random(in: 0 ..< 5)]
+        rightDiceImageView.image = dicesArray[Int.random(in: 0 ..< 5)]
     }
 }
 
