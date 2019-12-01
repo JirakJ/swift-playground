@@ -14,13 +14,14 @@ class ViewController: UIViewController {
     var temp = 0.0
     var tempPrev = 0.0
     var lastOperation = ""
+    let possibleOperations = ["+","-","/","*"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
     @IBAction func buttonZeroPressed(_ sender: Any) {
-        if(resultLabel.text! == "0"){
+        if(resultLabel.text! == "0" || possibleOperations.contains(resultLabel.text!)){
             resultLabel.text! = "0"
             print("Sorry but why I should write down more zeros.")
         } else {
@@ -54,7 +55,7 @@ class ViewController: UIViewController {
     }
         
     @IBAction func buttonOnePressed(_ sender: Any) {
-        if(resultLabel.text! == "0"){
+        if(resultLabel.text! == "0" || possibleOperations.contains(resultLabel.text!)){
             resultLabel.text! = "1"
         } else {
             resultLabel.text! += "1"
@@ -62,7 +63,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonTwoPressed(_ sender: Any) {
-        if(resultLabel.text! == "0"){
+        if(resultLabel.text! == "0" || possibleOperations.contains(resultLabel.text!)){
             resultLabel.text! = "2"
         } else {
             resultLabel.text! += "2"
@@ -70,7 +71,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonThreePressed(_ sender: Any) {
-        if(resultLabel.text! == "0"){
+        if(resultLabel.text! == "0" || possibleOperations.contains(resultLabel.text!)){
             resultLabel.text! = "3"
         } else {
             resultLabel.text! += "3"
@@ -80,7 +81,7 @@ class ViewController: UIViewController {
     @IBAction func buttonPlusPressed(_ sender: Any) {
         temp = Double(resultLabel.text!)!
         if(tempPrev == 0.0){
-            resultLabel.text! = ""
+            resultLabel.text! = "+"
             tempPrev = temp
         } else {
             tempPrev += temp
@@ -91,7 +92,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonFourPressed(_ sender: Any) {
-        if(resultLabel.text! == "0"){
+        if(resultLabel.text! == "0" || possibleOperations.contains(resultLabel.text!)){
             resultLabel.text! = "4"
         } else {
             resultLabel.text! += "4"
@@ -99,7 +100,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonFivePressed(_ sender: Any) {
-        if(resultLabel.text! == "0"){
+        if(resultLabel.text! == "0" || possibleOperations.contains(resultLabel.text!)){
             resultLabel.text! = "5"
         } else {
             resultLabel.text! += "5"
@@ -107,7 +108,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonSixPressed(_ sender: Any) {
-        if(resultLabel.text! == "0"){
+        if(resultLabel.text! == "0" || possibleOperations.contains(resultLabel.text!)){
             resultLabel.text! = "6"
         } else {
             resultLabel.text! += "6"
@@ -117,7 +118,7 @@ class ViewController: UIViewController {
     @IBAction func buttonMinusPressed(_ sender: Any) {
        temp = Double(resultLabel.text!)!
        if(tempPrev == 0.0){
-           resultLabel.text! = ""
+           resultLabel.text! = "-"
            tempPrev = temp
        } else {
            tempPrev -= temp
@@ -128,7 +129,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonSevenPressed(_ sender: Any) {
-        if(resultLabel.text! == "0"){
+        if(resultLabel.text! == "0" || possibleOperations.contains(resultLabel.text!)){
             resultLabel.text! = "7"
         } else {
             resultLabel.text! += "7"
@@ -136,7 +137,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonEightPressed(_ sender: Any) {
-        if(resultLabel.text! == "0"){
+        if(resultLabel.text! == "0" || possibleOperations.contains(resultLabel.text!)){
             resultLabel.text! = "8"
         } else {
             resultLabel.text! += "8"
@@ -144,7 +145,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonNinePressed(_ sender: Any) {
-        if(resultLabel.text! == "0"){
+        if(resultLabel.text! == "0" || possibleOperations.contains(resultLabel.text!)){
             resultLabel.text! = "9"
         } else {
             resultLabel.text! += "9"
@@ -154,7 +155,7 @@ class ViewController: UIViewController {
     @IBAction func buttonMultiplyPressed(_ sender: Any) {
         temp = Double(resultLabel.text!)!
         if(tempPrev == 0.0){
-            resultLabel.text! = ""
+            resultLabel.text! = "x"
             tempPrev = temp
         } else {
             tempPrev *= temp
@@ -201,7 +202,7 @@ class ViewController: UIViewController {
     @IBAction func buttonDividePressed(_ sender: Any) {
         temp = Double(resultLabel.text!)!
         if(tempPrev == 0.0){
-            resultLabel.text! = ""
+            resultLabel.text! = "/"
             tempPrev = temp
         } else {
             tempPrev /= temp
