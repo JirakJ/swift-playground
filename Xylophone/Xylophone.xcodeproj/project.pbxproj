@@ -13,6 +13,13 @@
 		FE62EEF22393FD2600DD550D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE62EEF02393FD2600DD550D /* Main.storyboard */; };
 		FE62EEF42393FD2600DD550D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE62EEF32393FD2600DD550D /* Assets.xcassets */; };
 		FE62EEF72393FD2600DD550D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE62EEF52393FD2600DD550D /* LaunchScreen.storyboard */; };
+		FE62EF1E23946FB900DD550D /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE62EF1723946FB800DD550D /* D.wav */; };
+		FE62EF1F23946FB900DD550D /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE62EF1823946FB900DD550D /* G.wav */; };
+		FE62EF2023946FB900DD550D /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE62EF1923946FB900DD550D /* B.wav */; };
+		FE62EF2123946FB900DD550D /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE62EF1A23946FB900DD550D /* E.wav */; };
+		FE62EF2223946FB900DD550D /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE62EF1B23946FB900DD550D /* A.wav */; };
+		FE62EF2323946FB900DD550D /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE62EF1C23946FB900DD550D /* F.wav */; };
+		FE62EF2423946FB900DD550D /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE62EF1D23946FB900DD550D /* C.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,14 @@
 		FE62EEF32393FD2600DD550D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE62EEF62393FD2600DD550D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE62EEF82393FD2600DD550D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE62EF062394654700DD550D /* Sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sounds; path = Xylophone/Sounds; sourceTree = "<group>"; };
+		FE62EF1723946FB800DD550D /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = D.wav; path = Xylophone/Sounds/D.wav; sourceTree = "<group>"; };
+		FE62EF1823946FB900DD550D /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = G.wav; path = Xylophone/Sounds/G.wav; sourceTree = "<group>"; };
+		FE62EF1923946FB900DD550D /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = B.wav; path = Xylophone/Sounds/B.wav; sourceTree = "<group>"; };
+		FE62EF1A23946FB900DD550D /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = E.wav; path = Xylophone/Sounds/E.wav; sourceTree = "<group>"; };
+		FE62EF1B23946FB900DD550D /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = A.wav; path = Xylophone/Sounds/A.wav; sourceTree = "<group>"; };
+		FE62EF1C23946FB900DD550D /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = F.wav; path = Xylophone/Sounds/F.wav; sourceTree = "<group>"; };
+		FE62EF1D23946FB900DD550D /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = C.wav; path = Xylophone/Sounds/C.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +55,14 @@
 		FE62EEDE2393FD2600DD550D = {
 			isa = PBXGroup;
 			children = (
+				FE62EF1B23946FB900DD550D /* A.wav */,
+				FE62EF1923946FB900DD550D /* B.wav */,
+				FE62EF1D23946FB900DD550D /* C.wav */,
+				FE62EF1723946FB800DD550D /* D.wav */,
+				FE62EF1A23946FB900DD550D /* E.wav */,
+				FE62EF1C23946FB900DD550D /* F.wav */,
+				FE62EF1823946FB900DD550D /* G.wav */,
+				FE62EF062394654700DD550D /* Sounds */,
 				FE62EEE92393FD2600DD550D /* Xylophone */,
 				FE62EEE82393FD2600DD550D /* Products */,
 			);
@@ -56,6 +79,7 @@
 		FE62EEE92393FD2600DD550D /* Xylophone */ = {
 			isa = PBXGroup;
 			children = (
+				FE62EF05239464BB00DD550D /* Sounds */,
 				FE62EEEA2393FD2600DD550D /* AppDelegate.swift */,
 				FE62EEEC2393FD2600DD550D /* SceneDelegate.swift */,
 				FE62EEEE2393FD2600DD550D /* ViewController.swift */,
@@ -65,6 +89,13 @@
 				FE62EEF82393FD2600DD550D /* Info.plist */,
 			);
 			path = Xylophone;
+			sourceTree = "<group>";
+		};
+		FE62EF05239464BB00DD550D /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +156,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE62EF1E23946FB900DD550D /* D.wav in Resources */,
+				FE62EF1F23946FB900DD550D /* G.wav in Resources */,
+				FE62EF2023946FB900DD550D /* B.wav in Resources */,
+				FE62EF2123946FB900DD550D /* E.wav in Resources */,
+				FE62EF2223946FB900DD550D /* A.wav in Resources */,
+				FE62EF2323946FB900DD550D /* F.wav in Resources */,
+				FE62EF2423946FB900DD550D /* C.wav in Resources */,
 				FE62EEF72393FD2600DD550D /* LaunchScreen.storyboard in Resources */,
 				FE62EEF42393FD2600DD550D /* Assets.xcassets in Resources */,
 				FE62EEF22393FD2600DD550D /* Main.storyboard in Resources */,
