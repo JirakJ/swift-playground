@@ -13,6 +13,7 @@
 		FE371554239BC985002D5D4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE371552239BC985002D5D4E /* Main.storyboard */; };
 		FE371556239BC988002D5D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE371555239BC988002D5D4E /* Assets.xcassets */; };
 		FE371559239BC988002D5D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE371557239BC988002D5D4E /* LaunchScreen.storyboard */; };
+		FE371562239C2C0E002D5D4E /* alarm.wav in Resources */ = {isa = PBXBuildFile; fileRef = FE371561239C2C0E002D5D4E /* alarm.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		FE371558239BC988002D5D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE37155A239BC988002D5D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE371560239BCAD3002D5D4E /* Egg Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Egg Timer.entitlements"; sourceTree = "<group>"; };
+		FE371561239C2C0E002D5D4E /* alarm.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarm.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		FE371540239BC985002D5D4E = {
 			isa = PBXGroup;
 			children = (
+				FE371561239C2C0E002D5D4E /* alarm.wav */,
 				FE37154B239BC985002D5D4E /* Egg Timer */,
 				FE37154A239BC985002D5D4E /* Products */,
 			);
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE371562239C2C0E002D5D4E /* alarm.wav in Resources */,
 				FE371559239BC988002D5D4E /* LaunchScreen.storyboard in Resources */,
 				FE371556239BC988002D5D4E /* Assets.xcassets in Resources */,
 				FE371554239BC985002D5D4E /* Main.storyboard in Resources */,
