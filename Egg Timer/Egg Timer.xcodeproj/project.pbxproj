@@ -24,6 +24,7 @@
 		FE371555239BC988002D5D4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE371558239BC988002D5D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE37155A239BC988002D5D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE371560239BCAD3002D5D4E /* Egg Timer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Egg Timer.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		FE37154B239BC985002D5D4E /* Egg Timer */ = {
 			isa = PBXGroup;
 			children = (
+				FE371560239BCAD3002D5D4E /* Egg Timer.entitlements */,
 				FE37154C239BC985002D5D4E /* AppDelegate.swift */,
 				FE37154E239BC985002D5D4E /* SceneDelegate.swift */,
 				FE371550239BC985002D5D4E /* ViewController.swift */,
@@ -284,7 +286,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Egg Timer/Egg Timer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 7ARF7UDLQ6;
 				INFOPLIST_FILE = "Egg Timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,6 +297,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jakubjirak.Egg-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,7 +307,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Egg Timer/Egg Timer.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 7ARF7UDLQ6;
 				INFOPLIST_FILE = "Egg Timer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jakubjirak.Egg-Timer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
