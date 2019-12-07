@@ -19,8 +19,7 @@ class ViewController: UIViewController {
     var secondsRemaining: Int  = 60
     var secondsTicked: Int  = 0
     var selectedHardness = ""
-    //let eggTimerDict = ["Soft": 300, "Medium": 480, "Hard": 720]
-    let eggTimerDict = ["Soft": 3, "Medium": 4, "Hard": 7]
+    let eggTimerDict = ["Soft": 300, "Medium": 480, "Hard": 720]
     
     override func viewDidLoad() {
         super.viewDidLoad()
