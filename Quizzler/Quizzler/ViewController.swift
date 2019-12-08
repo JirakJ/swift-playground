@@ -16,16 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     let questions = [
-    "Is 4 + 2 equal 6?",
-    "Is London in UK?",
-    "Is 4 - 2 equal 6?"
+        ["Is 4 + 2 equal 6?", true],
+        ["Is London in UK?", true],
+        ["Is 4 - 2 equal 6?", false]
     ]
     
-    let answers = [
-    true,
-    true,
-    false
-    ]
     var actualQuestion = 0
     
     override func viewDidLoad() {
@@ -33,7 +28,7 @@ class ViewController: UIViewController {
         progressBar.invalidateIntrinsicContentSize()
         progressBar.isHidden = true
         //actualQuestion = Int.random(in: 0 ..< questions.count)
-        questionText.text = questions[actualQuestion]
+        questionText.text = questions[actualQuestion][0] as? String
         // Do any additional setup after loading the view.
     }
     
@@ -49,27 +44,27 @@ class ViewController: UIViewController {
         switch sender.currentTitle! {
         case "True":
             print("Button True pressed.")
-            if(answers[actualQuestion]==true){
+            if(questions[actualQuestion][1] as? Bool==true){
                 resultLabel.text = "Your answer was correct!"
                 resultLabel.textColor = UIColor.green
                 progressBar.isHidden = false
                 actualQuestionUpdate()
-                questionText.text = questions[actualQuestion]
-                progressBar.progress = Float(actualQuestion+1)/Float(answers.count)
-            } else if(answers[actualQuestion]==false){
+                questionText.text = questions[actualQuestion][0] as? String
+                progressBar.progress = Float(actualQuestion+1)/Float(questions.count)
+            } else if(questions[actualQuestion][1] as? Bool==false){
                 resultLabel.text = "Your answer was incorrect!"
                 resultLabel.textColor = UIColor.red
             }
         case "False":
             print("Button False pressed.")
-            if(answers[actualQuestion]==false){
+            if(questions[actualQuestion][1] as? Bool==false){
                 resultLabel.text = "Your answer was correct!"
                 resultLabel.textColor = UIColor.green
                 progressBar.isHidden = false
                 actualQuestionUpdate()
-                questionText.text = questions[actualQuestion]
-                progressBar.progress = Float(actualQuestion+1)/Float(answers.count)
-            } else if(answers[actualQuestion]==true){
+                questionText.text = questions[actualQuestion][0] as? String
+                progressBar.progress = Float(actualQuestion+1)/Float(questions.count)
+            } else if(questions[actualQuestion][1] as? Bool==true){
                 resultLabel.text = "Your answer was incorrect!"
                 resultLabel.textColor = UIColor.red
             }
