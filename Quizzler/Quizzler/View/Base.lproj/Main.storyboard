@@ -19,16 +19,16 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0yT-ea-CqZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="773.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="786"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OAj-pi-U89">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="386.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="OAj-pi-U89">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="393"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xL-27-mra">
-                                                <rect key="frame" x="0.0" y="386.5" width="414" height="387"/>
+                                                <rect key="frame" x="0.0" y="393" width="414" height="393"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -36,17 +36,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="X0K-5Z-MYm">
-                                        <rect key="frame" x="0.0" y="773.5" width="414" height="41.5"/>
+                                        <rect key="frame" x="0.0" y="786" width="414" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7b-X3-fSG">
-                                                <rect key="frame" x="0.0" y="0.0" width="207" height="41.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="207" height="30"/>
                                                 <state key="normal" title="True"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GSe-bb-lUq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixe-KH-Um2">
-                                                <rect key="frame" x="207" y="0.0" width="207" height="41.5"/>
+                                                <rect key="frame" x="207" y="0.0" width="207" height="30"/>
                                                 <state key="normal" title="False"/>
                                                 <connections>
                                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBc-rP-gEl"/>
@@ -55,7 +55,7 @@
                                         </subviews>
                                     </stackView>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AX7-NM-jOv">
-                                        <rect key="frame" x="0.0" y="815" width="414" height="3"/>
+                                        <rect key="frame" x="0.0" y="816" width="414" height="2"/>
                                     </progressView>
                                 </subviews>
                             </stackView>

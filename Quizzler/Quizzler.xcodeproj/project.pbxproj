@@ -14,6 +14,7 @@
 		FE371579239D2097002D5D4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE371578239D2097002D5D4E /* Assets.xcassets */; };
 		FE37157C239D2097002D5D4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE37157A239D2097002D5D4E /* LaunchScreen.storyboard */; };
 		FEB4424E239D38A5000266CE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4424D239D38A5000266CE /* Question.swift */; };
+		FEB44253239D45FF000266CE /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB44252239D45FF000266CE /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		FE37157B239D2097002D5D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE37157D239D2097002D5D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FEB4424D239D38A5000266CE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		FEB44252239D45FF000266CE /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		FEB44254239D6C9B000266CE /* Quizzler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Quizzler.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,14 +62,15 @@
 		FE37156E239D2094002D5D4E /* Quizzler */ = {
 			isa = PBXGroup;
 			children = (
+				FEB44254239D6C9B000266CE /* Quizzler.entitlements */,
 				FE37156F239D2094002D5D4E /* AppDelegate.swift */,
 				FE371571239D2094002D5D4E /* SceneDelegate.swift */,
-				FEB44251239D4538000266CE /* Controller */,
+				FEB4424F239D4491000266CE /* Model */,
 				FEB44250239D451E000266CE /* View */,
+				FEB44251239D4538000266CE /* Controller */,
 				FE371578239D2097002D5D4E /* Assets.xcassets */,
 				FE37157A239D2097002D5D4E /* LaunchScreen.storyboard */,
 				FE37157D239D2097002D5D4E /* Info.plist */,
-				FEB4424F239D4491000266CE /* Model */,
 			);
 			path = Quizzler;
 			sourceTree = "<group>";
@@ -75,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				FEB4424D239D38A5000266CE /* Question.swift */,
+				FEB44252239D45FF000266CE /* QuizBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE371574239D2094002D5D4E /* ViewController.swift in Sources */,
+				FEB44253239D45FF000266CE /* QuizBrain.swift in Sources */,
 				FEB4424E239D38A5000266CE /* Question.swift in Sources */,
 				FE371570239D2094002D5D4E /* AppDelegate.swift in Sources */,
 				FE371572239D2094002D5D4E /* SceneDelegate.swift in Sources */,
@@ -313,7 +319,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Quizzler/Quizzler.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 7ARF7UDLQ6;
 				INFOPLIST_FILE = Quizzler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubjirak.Quizzler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,7 +340,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Quizzler/Quizzler.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_TEAM = 7ARF7UDLQ6;
 				INFOPLIST_FILE = Quizzler/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -340,6 +351,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakubjirak.Quizzler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
