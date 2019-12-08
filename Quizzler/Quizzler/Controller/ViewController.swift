@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonFalse: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var timer = Timer()
     var quizBrain = QuizBrain()
@@ -43,6 +44,8 @@ class ViewController: UIViewController {
             resultLabel.text = "Your answer was incorrect!"
             resultLabel.textColor = UIColor.red
         }
+        
+        scoreLabel.text = quizBrain.getScore()
         timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateResultLabel), userInfo: nil, repeats: false)
         
     }

@@ -16,14 +16,19 @@ struct QuizBrain {
     ]
     
     var actualQuestion = 0
+
+    var correctAnswers = 0
+    var falseAnswers = 0
     
     //_ mean that I don't have to use usenAnswer: Bool when I call this method -> it's cool!
-    func checkAnswer(_ userAnswer: String) -> Bool{
+    mutating func checkAnswer(_ userAnswer: String) -> Bool{
         if userAnswer == questions[actualQuestion].answer {
             //Here will be correct answer reaction
+            correctAnswers += 1
             return true
         } else {
             //Here will be false answer reaction
+            falseAnswers += 1
             return false
         }
     }
@@ -32,7 +37,12 @@ struct QuizBrain {
         self.actualQuestion += 1
         self.actualQuestion = actualQuestion%questions.count
     }
-    
+
+
+    func getScore() -> String {
+        return "Correct: \(correctAnswers) | False: \(falseAnswers)"
+    }
+
     func getCurrentQuestionText() -> String {
         return questions[actualQuestion].question
     }
