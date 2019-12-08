@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var resultLabel: UILabel!
     
+    var timer = Timer()
+    
     let questions = [
         Question(question: "Is 4 + 2 equal 6?", answer: true),Question(question: "Is London in UK?", answer: true),Question(question: "Is 4 - 2 equal 6?", answer: false)
     ]
@@ -37,7 +39,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ sender: UIButton) {
-        
+        resultLabel.isHidden = false
         
         switch sender.currentTitle! {
         case "True":
@@ -69,7 +71,12 @@ class ViewController: UIViewController {
         default:
             print("Unknown option.")
         }
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(updateResultLabel), userInfo: nil, repeats: false)
         
+    }
+    
+    @objc func updateResultLabel () {
+        resultLabel.isHidden = true
     }
     
 }
