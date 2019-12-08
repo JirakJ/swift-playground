@@ -44,6 +44,7 @@
 				FE37156D239D2094002D5D4E /* Products */,
 			);
 			sourceTree = "<group>";
+			wrapsLines = 0;
 		};
 		FE37156D239D2094002D5D4E /* Products */ = {
 			isa = PBXGroup;
