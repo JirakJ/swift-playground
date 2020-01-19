@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BADEA07051B2EC33F67CB774 /* GeometryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEAA7FB2A460258C2A23A0 /* GeometryTest.swift */; };
+		BADEA4B2B5960011F4FC3D81 /* TriangleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEA42EE522D4F5BD2BE1D7 /* TriangleShape.swift */; };
 		BADEA5DF14CBC91AA8581C75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEA6EFFAA2D53B39A5E27D /* ContentView.swift */; };
+		BADEA6205CE8566B98F726EE /* SmileShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEA97B6607B68FD14B2BC7 /* SmileShape.swift */; };
 		BADEA7E04EA8F681CEB23CE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BADEA055606D120EF9D7E706 /* LaunchScreen.storyboard */; };
 		BADEA884E5DFDB16BED2048E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEA09D14A461B35E965E7F /* AppDelegate.swift */; };
 		BADEA9778EB738BFBDF90F02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BADEACB94ECADD28C9D8B366 /* Assets.xcassets */; };
+		BADEACFB0CA8216688E55D86 /* RectangleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEAB16BE01475AC933D6AE /* RectangleShape.swift */; };
 		BADEAD364A8FCC699FBA34CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADEAA08863118A203DEBC07 /* SceneDelegate.swift */; };
 		BADEAE04A688228B71C96583 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BADEA56AA8AFA8975F71A260 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -18,10 +22,14 @@
 /* Begin PBXFileReference section */
 		BADEA09D14A461B35E965E7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BADEA318D3E34DA70D0F1FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BADEA42EE522D4F5BD2BE1D7 /* TriangleShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleShape.swift; sourceTree = "<group>"; };
 		BADEA4C64241F9E4883EF0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		BADEA56AA8AFA8975F71A260 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BADEA6EFFAA2D53B39A5E27D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BADEA97B6607B68FD14B2BC7 /* SmileShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmileShape.swift; sourceTree = "<group>"; };
 		BADEAA08863118A203DEBC07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BADEAA7FB2A460258C2A23A0 /* GeometryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryTest.swift; sourceTree = "<group>"; };
+		BADEAB16BE01475AC933D6AE /* RectangleShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectangleShape.swift; sourceTree = "<group>"; };
 		BADEACB94ECADD28C9D8B366 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BADEACBBD5C0D51C8C893073 /* Drawing test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Drawing test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -47,6 +55,10 @@
 				BADEAA08863118A203DEBC07 /* SceneDelegate.swift */,
 				BADEA6EFFAA2D53B39A5E27D /* ContentView.swift */,
 				BADEAC6373374F2776E818B5 /* Preview Content */,
+				BADEAA7FB2A460258C2A23A0 /* GeometryTest.swift */,
+				BADEA42EE522D4F5BD2BE1D7 /* TriangleShape.swift */,
+				BADEAB16BE01475AC933D6AE /* RectangleShape.swift */,
+				BADEA97B6607B68FD14B2BC7 /* SmileShape.swift */,
 			);
 			path = "Drawing test";
 			sourceTree = "<group>";
@@ -108,7 +120,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = BADEA2CCD05D6F1608B03704;
 			productRefGroup = BADEA5FDD7CFCB201CAA03A6 /* Products */;
@@ -141,6 +155,10 @@
 				BADEA884E5DFDB16BED2048E /* AppDelegate.swift in Sources */,
 				BADEAD364A8FCC699FBA34CF /* SceneDelegate.swift in Sources */,
 				BADEA5DF14CBC91AA8581C75 /* ContentView.swift in Sources */,
+				BADEA07051B2EC33F67CB774 /* GeometryTest.swift in Sources */,
+				BADEA4B2B5960011F4FC3D81 /* TriangleShape.swift in Sources */,
+				BADEACFB0CA8216688E55D86 /* RectangleShape.swift in Sources */,
+				BADEA6205CE8566B98F726EE /* SmileShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +254,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -312,6 +329,7 @@
 				BADEA233CE729CF9E6322C8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BADEA9434B3ABDDDD93224E2 /* Build configuration list for PBXProject "Drawing test" */ = {
 			isa = XCConfigurationList;
