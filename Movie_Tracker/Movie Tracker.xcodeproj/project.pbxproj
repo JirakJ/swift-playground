@@ -105,6 +105,11 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = JakubJirak;
+				TargetAttributes = {
+					BADEA84014097E928A0CFE59 = {
+						DevelopmentTeam = 7ARF7UDLQ6;
+					};
+				};
 			};
 			buildConfigurationList = BADEA0F90785C0C52FA7C402 /* Build configuration list for PBXProject "Movie Tracker" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -222,13 +227,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_ASSET_PATHS = "\"Movie Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 7ARF7UDLQ6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Movie Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jakubjirak.Movie-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -237,13 +243,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_ASSET_PATHS = "\"Movie Tracker/Preview Content\"";
+				DEVELOPMENT_TEAM = 7ARF7UDLQ6;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Movie Tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jakubjirak.Movie-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
