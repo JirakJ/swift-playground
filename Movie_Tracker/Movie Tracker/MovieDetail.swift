@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MovieDetail.swift
 //  Movie Tracker
 //
 //  Created by Jakub Jirák on 19/01/2020.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MovieDetail: View {
     @State var title = ""
     @State var rating = 3.0
     @State var seen = false
@@ -52,9 +52,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MovieDetail()
     }
 }
 
