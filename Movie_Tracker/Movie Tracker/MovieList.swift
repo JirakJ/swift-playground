@@ -12,11 +12,11 @@ struct MovieList: View {
         NavigationView {
             List(movieStorage.movies){
                 currentMovie in
-                NavigationLink(destination: MovieDetail(movie: currentMovie, newMovie: false)) {
+                NavigationLink(destination: MovieDetail(movie: currentMovie, movieStorage: self.movieStorage, newMovie: false)) {
                     Text(currentMovie.title)
                 }
             }.navigationBarTitle("Movies").navigationBarItems(trailing: 
-                NavigationLink(destination: MovieDetail(movie: Movie(), newMovie: true)) {
+                NavigationLink(destination: MovieDetail(movie: Movie(), movieStorage: movieStorage, newMovie: true)) {
                     Image(systemName: "plus").resizable().frame(width: 25, height: 25)
                 }
             )

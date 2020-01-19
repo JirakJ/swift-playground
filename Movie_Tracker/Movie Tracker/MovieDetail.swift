@@ -11,6 +11,7 @@ import SwiftUI
 struct MovieDetail: View {
     @State var movie: Movie
     @Environment(\.presentationMode) var presentationMode
+    @ObservedObject var movieStorage: MovieStorage
     let newMovie: Bool
 
     var body: some View {
@@ -40,6 +41,9 @@ struct MovieDetail: View {
             }
             Section {
                 Button(action: {
+                    if self.newMovie {
+                        self.movieStorage.movies.append(self.movie)
+                    }
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
                     HStack {
@@ -55,7 +59,7 @@ struct MovieDetail: View {
 
 struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetail(movie: Movie(), newMovie: true)
+        MovieDetail(movie: Movie(), movieStorage: MovieStorage(), newMovie: true)
     }
 }
 
