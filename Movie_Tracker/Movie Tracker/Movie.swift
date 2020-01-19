@@ -25,3 +25,7 @@ struct Movie: Identifiable {
         self.seen = false
     }
 }
+
+class MovieStorage: ObservableObject {
+    @Published var movies = [Movie]()
+}

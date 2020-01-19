@@ -6,13 +6,11 @@
 import SwiftUI
 
 struct MovieList: View {
-//    @EnvironmentObject var movieStorage: MovieStorage
-//    @State var pushView = false
-    var movies: [Movie]
+    @ObservedObject var movieStorage = MovieStorage()
 
     var body: some View {
         NavigationView {
-            List(movies){
+            List(movieStorage.movies){
                 currentMovie in
                 NavigationLink(destination: MovieDetail(movie: currentMovie)) {
                     Text(currentMovie.title)
@@ -29,6 +27,6 @@ struct MovieList: View {
 
 struct MovieList_Preview: View {
     var body: some View {
-        MovieList(movies: [Movie(), Movie()])
+        MovieList()
     }
 }
