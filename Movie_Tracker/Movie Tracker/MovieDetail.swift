@@ -40,18 +40,69 @@ struct MovieDetail: View {
                 }
             }
             Section {
-                Button(action: {
-                    if self.newMovie {
-                        self.movieStorage.movies.append(self.movie)
+                if self.newMovie {
+                    Button(action: {
+                        if self.newMovie {
+                            //save
+                            self.movieStorage.movies.append(self.movie)
+                        } else {
+                            //update or delete
+                            for x in 0..<self.movieStorage.movies.count {
+                                if self.movieStorage.movies[x].id == self.movie.id {
+                                    self.movieStorage.movies[x] = self.movie
+                                }
+                            }
+                        }
+                        self.presentationMode.wrappedValue.dismiss()
+                    })
+                    {
+                        HStack {
+                            Spacer()
+                            if(self.newMovie) {
+                                Text("Save").font(.largeTitle)
+                            } else {
+                                Text("Update").font(.largeTitle)
+                            }
+                            Spacer()
+                        }
+                    }.disabled(movie.title.isEmpty)
+                } else {
+                    HStack{
+                        Button(action: {
+                            //update
+                            for x in 0..<self.movieStorage.movies.count {
+                                if self.movieStorage.movies[x].id == self.movie.id {
+                                    self.movieStorage.movies[x] = self.movie
+                                }
+                            }
+                            self.presentationMode.wrappedValue.dismiss()
+                        })
+                        {
+                            HStack {
+                                Spacer()
+                                Text("Update").font(.largeTitle)
+                                Spacer()
+                            }
+                        }
+                        Button(action: {
+                        //delete
+                        for x in 0..<self.movieStorage.movies.count {
+                            if self.movieStorage.movies[x].id == self.movie.id {
+                                self.movieStorage.movies.remove(at: x)
+                            }
+                        }
+                        self.presentationMode.wrappedValue.dismiss()
+                        })
+                        {
+                            HStack {
+                                Spacer()
+                                Text("Delete").font(.largeTitle).foregroundColor(.red)
+                                Spacer()
+                            }
+                        }
                     }
-                    self.presentationMode.wrappedValue.dismiss()
-                }) {
-                    HStack {
-                        Spacer()
-                        Text("Save").font(.largeTitle)
-                        Spacer()
-                    }
-                }.disabled(movie.title.isEmpty)
+                }
+
             }
         }.listStyle(GroupedListStyle())
     }
