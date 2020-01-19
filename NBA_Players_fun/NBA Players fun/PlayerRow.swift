@@ -10,10 +10,8 @@ struct PlayerRow: View{
     var body: some View {
         HStack{
             Image(playerStruct.imageName).resizable().aspectRatio(contentMode: .fit).clipShape(Circle()).background(Circle()).foregroundColor(playerStruct.team.color).overlay(Circle().stroke(Color.white, lineWidth: 2)).shadow(radius: 12)
-            Text(playerStruct.name).font(.headline).fontWeight(.bold)
-            Spacer()
+            Text(playerStruct.name).font(.headline).fontWeight(.bold).lineLimit(1).minimumScaleFactor(0.7)
         }
-
     }
 }
 

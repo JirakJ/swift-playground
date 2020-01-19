@@ -15,7 +15,7 @@ struct StatText: View {
             Text(statName).font(.largeTitle).fontWeight(.bold).padding(.trailing, 30)
             Text(statValue).font(.largeTitle).fontWeight(.light).padding(.trailing, 30)
             Spacer()
-        }
+        }.lineLimit(1).minimumScaleFactor(0.5)
 
     }
 }
