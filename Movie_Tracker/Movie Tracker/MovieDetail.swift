@@ -10,6 +10,7 @@ import SwiftUI
 
 struct MovieDetail: View {
     @State var movie: Movie
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         List{
@@ -37,7 +38,9 @@ struct MovieDetail: View {
                 }
             }
             Section {
-                Button(action: {}) {
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
                     HStack {
                         Spacer()
                         Text("Save").font(.largeTitle)
