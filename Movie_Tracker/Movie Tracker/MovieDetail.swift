@@ -11,7 +11,7 @@ import SwiftUI
 struct MovieDetail: View {
     @State var movie: Movie
     @Environment(\.presentationMode) var presentationMode
-    @ObservedObject var movieStorage: MovieStorage
+    @EnvironmentObject var movieStorage: MovieStorage
     let newMovie: Bool
 
     var body: some View {
@@ -85,13 +85,13 @@ struct MovieDetail: View {
                             }
                         }
                         Button(action: {
-                        //delete
-                        for x in 0..<self.movieStorage.movies.count {
-                            if self.movieStorage.movies[x].id == self.movie.id {
-                                self.movieStorage.movies.remove(at: x)
+                            //delete
+                            for x in 0..<self.movieStorage.movies.count {
+                                if self.movieStorage.movies[x].id == self.movie.id {
+                                    self.movieStorage.movies.remove(at: x)
+                                }
                             }
-                        }
-                        self.presentationMode.wrappedValue.dismiss()
+                            self.presentationMode.wrappedValue.dismiss()
                         })
                         {
                             HStack {
@@ -110,7 +110,7 @@ struct MovieDetail: View {
 
 struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetail(movie: Movie(), movieStorage: MovieStorage(), newMovie: true)
+        MovieDetail(movie: Movie(), newMovie: true)
     }
 }
 
