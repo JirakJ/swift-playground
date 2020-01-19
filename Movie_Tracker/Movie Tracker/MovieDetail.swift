@@ -18,16 +18,16 @@ struct MovieDetail: View {
         List{
             Section {
                 SectionTitle(title: "Title")
-                TextField("Movie Title", text: $movie.title)
+                TextField("Movie Title", text: $movie.title).accessibility(label: Text("Insert movie title"))
             }
             Section {
                 SectionTitle(title: "Rating")
                 HStack {
                     Spacer()
-                    Text(String(repeating: "★", count: Int(movie.rating))).foregroundColor(.yellow).font(.largeTitle)
+                    Text(String(repeating: "★", count: Int(movie.rating))).foregroundColor(.yellow).font(.largeTitle).accessibility(label: Text("\(Int(movie.rating)) star rating"))
                     Spacer()
                 }
-                Slider(value: $movie.rating, in: 1...5, step: 1)
+                Slider(value: $movie.rating, in: 1...5, step: 1).accessibility(label: Text("\(Int(movie.rating))"))
             }
             Section {
                 SectionTitle(title: "Seen")
