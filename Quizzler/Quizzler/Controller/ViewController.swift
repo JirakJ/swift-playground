@@ -12,9 +12,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var questionText: UILabel!
     @IBOutlet weak var buttonTrue: UIButton!
     @IBOutlet weak var buttonFalse: UIButton!
+    @IBOutlet weak var buttonHandler: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var buttonStackView: UIStackView!
     
     var timer = Timer()
     var quizBrain = QuizBrain()
@@ -25,6 +27,8 @@ class ViewController: UIViewController {
         progressBar.invalidateIntrinsicContentSize()
         progressBar.isHidden = true
         questionText.text = quizBrain.getCurrentQuestionText()
+        
+        buttonTrue.titleLabel = quizBrain.
     }
     
     

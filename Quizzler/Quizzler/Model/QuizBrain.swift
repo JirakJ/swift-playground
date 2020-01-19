@@ -10,9 +10,8 @@ import Foundation
 
 struct QuizBrain {
     let questions = [
-        Question(question: "Is 4 + 2 equal 6?", answer: "True"),
-        Question(question: "Is London in UK?", answer: "True"),
-        Question(question: "Is 4 - 2 equal 6?", answer: "False")
+        MultipleQuestions(question: "What is result of 6 - 2?", answer: "4", options: ["2","4","6"]),
+        MultipleQuestions(question: "What is result of 4 + 2 ?", answer: "6", options: ["2","4","6"])
     ]
     
     var actualQuestion = 0
@@ -31,13 +30,17 @@ struct QuizBrain {
             falseAnswers += 1
             return false
         }
+
     }
     
     mutating func actualQuestionUpdate() {
         self.actualQuestion += 1
         self.actualQuestion = actualQuestion%questions.count
     }
-
+    
+    func getButtonLabel1() -> String {
+        return "Correct: \(correctAnswers) | False: \(falseAnswers)"
+    }
 
     func getScore() -> String {
         return "Correct: \(correctAnswers) | False: \(falseAnswers)"
