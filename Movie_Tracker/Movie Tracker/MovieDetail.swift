@@ -11,6 +11,7 @@ import SwiftUI
 struct MovieDetail: View {
     @State var movie: Movie
     @Environment(\.presentationMode) var presentationMode
+    let newMovie: Bool
 
     var body: some View {
         List{
@@ -54,7 +55,7 @@ struct MovieDetail: View {
 
 struct MovieDetail_Previews: PreviewProvider {
     static var previews: some View {
-        MovieDetail(movie: Movie())
+        MovieDetail(movie: Movie(), newMovie: true)
     }
 }
 
